@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.drop-area {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #fafafa;
+}
+
+.drop-area.dragover {
+  border-color: #4677f5;
+  background: #ebf4ff;
+}
+
+#chooseBtn,
+#uploadBtn {
+  background: #4677f5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#chooseBtn:hover,
+#uploadBtn:hover {
+  background: #356ac3;
+}
+
+progress {
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
