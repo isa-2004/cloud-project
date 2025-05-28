@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CloudSnap</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>CloudSnap</h1>
+    <p>Upload your image to the cloud</p>
+
+    <div id="drop-area" class="drop-area">
+      <p id="fileName">Drag & drop an image here, or</p>
+      <input type="file" id="imageInput" accept="image/*" hidden />
+      <button id="chooseBtn">Choose Image</button>
+    </div>
+
+    <button id="uploadBtn">Upload</button>
+
+    <progress id="progressBar" value="0" max="100" style="display:none; width:100%; margin-top:15px;"></progress>
+
+    <div id="result" style="display:none; margin-top:20px; text-align:center;">
+      <p>Uploaded successfully:</p>
+      <a id="resultLink" href="#" target="_blank">View Image</a><br/>
+      <img id="resultImage" src="" alt="Uploaded Image" style="max-width:100px; margin-top:10px;" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
