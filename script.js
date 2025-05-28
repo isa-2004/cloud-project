@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Drag events
-  ["dragenter","dragover"].forEach(evt =>
+  ["dragenter", "dragover"].forEach(evt =>
     dropArea.addEventListener(evt, e => {
       e.preventDefault();
       dropArea.classList.add("dragover");
     })
   );
-  ["dragleave","drop"].forEach(evt =>
+  ["dragleave", "drop"].forEach(evt =>
     dropArea.addEventListener(evt, e => {
       e.preventDefault();
       dropArea.classList.remove("dragover");
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     progressBar.value = 0;
 
     const xhr = new XMLHttpRequest();
-    xhr.open("POST", "http://localhost:5000/upload");
+    xhr.open("POST", "https://cloud-project-xqa2.onrender.com/upload");
 
     xhr.upload.onprogress = e => {
       if (e.lengthComputable) {
